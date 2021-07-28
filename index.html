@@ -1,0 +1,228 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Anton Mironov's web page</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/Chart.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+	<!--Header-->
+	<div class="container-lg bg-dark text-white pt-3 pb-3">
+		<div class="row">
+			<div class="col-5 col-md-4 col-sm-2 align-items-right">
+				<img src="img/my_photo.jpg" class="rounded-circle float-right my-photo">
+			</div>
+			<div class="col-7 col-md-6 col-sm-2 align-self-center">
+				<p class="h4">Привет, меня зовут Антон Миронов.</p>
+				<p class="h5">Я android разработчик.</p>
+			</div>
+		</div>
+		<div class="row justify-content-center pt-2">
+			<div class="col-2 col-sm-1">
+				<a href="https://github.com/antonmiron" class="fa fa-github" target="_blank"></a>
+			</div>
+			<div class="col-2 col-sm-1 my-auto">
+				<a href="https://t.me/antonmironOff" class="fa fa-telegram" target="_blank"></a>
+			</div>
+			<div class="col-2 col-sm-1">
+				<a href="mailto:mrpalord@gmail.com"><img src="img/email.png" class="icon"></a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--About-->
+	<div class="container-lg bg-light pt-5 pb-5">
+		<p class="h3 text-center mb-3">Обо мне <a target="_blank" href="./MironovAA(CV).pdf">(резюме)</a></p>
+
+		<div class="row">
+			<div class="col-4 col-md-2 col-sm-2 block align-self-center">
+				<div class="circle bg-dark">
+					<p>Сейчас</p>
+				</div>
+			</div>
+			<div class="col-8 col-md-10 col-sm-2">
+				<p class="text-justify"><b>ООО "Элком+"</b></br> 
+					Разработка и поддержка <abbr title="Push To Talk over Cellular">PoC</abbr> приложения. Здесь получил огромный опыт в разработке на Android. Для себя отметил принцип проектирования KISS, которому стараюсь придерживаться постоянно. На данном проекте я отвечаю за работу с API, прием и передачу голоса, emergency, создание/редактирование разговорных групп.</p>
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-4 col-md-2 col-sm-2 block align-self-center">
+					<div class="circle bg-dark">
+						<p>2018 - 2019</p>
+					</div>
+				</div>
+				<div class="col-8 col-md-10 col-sm-2">
+					<p class="text-justify">
+						<b>ООО "Кроебэй"</b></br>
+					Первый опыт в Android разработке. Писал приложение "Онлайн Страхование" для Западно-Казахстанской области и Актюбинской области (в частности для городов Актюбинск и Уральск). Приложение было нацелено на автострахование. Для себя подчерпнул много нового (MVVM, Dependency Injection, SOLID и т.д.) и в целом этот опыт мне очень понравился.	</p></div>
+				</div>
+				
+
+				<div class="row mt-3">
+					<div class="col-4 col-md-2 col-sm-2 block align-self-center">
+						<div class="circle bg-dark">
+							<p>2014 - 2018</p>
+						</div>
+					</div>
+					<div class="col-8 col-md-10 col-sm-2">
+						<p class="text-justify"><b>Учеба</b></br>
+							Учился в Оренбургском государственном университете на факультете математики и информационных технологий. Специальность: программное обеспечение вычислительной техники и автоматизированных систем.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<!--<div class="col-md-5 col-sm-12 align-self-center">
+				<div class="card border-dark mt-3 mb-3">
+					<h5 class="card-header text-center">Пару слов...</h5>
+					<div class="card-body text-dark">
+						<p class="card-text text-justify">I like programming, in particular, I am interested in Android development (Kotlin, Java), Data Science (I want to learn). I also have a little experience developing for desktop (pet projects) C#, JavaFX, and working with the MS SQL and MySQL database. The web experience is even less with8 bootstrap, as an example of the current site &#128516;. I also enjoy traveling, cooking, swimming and cycling.</p>
+					</div>
+				</div>
+			</div>-->
+
+
+
+			<!--Technologies-->
+			<div class="container-lg bg-dark text-white pt-5 pb-3">
+				<p class="h3 text-center">
+					Используемые технологии
+				</p>
+				<p class="mutted text-center mb-5">(не полный список &#128516;)</p>
+				<canvas id="myChart" class="my-chart screen-center"></canvas>
+			</div>
+
+
+			<!--Portfolio-->
+			<div class="container-lg bg-light pt-5 pb-3">
+				<p class="h3 text-center mb-5">Портфолио</p>
+
+				<div id="demo" class="carousel slide screen-center" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+					</ul>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card">
+								<img class="card-img-top portfolio-top" src="img/banner1eng.jpg" alt="Card image">
+								<div class="card-body">
+									<h4 class="card-title text-center">Security Password</h4>
+									<p class="card-text text-justify">Простая версия менеджера паролей, позволяет хранить логин/пароль и примечания к ним.</br><span class="font-italic">(Приложение создано исключительно для демонстрационных целей! Не рекомендуется использовать его для хранения реальных записей)</span></br>
+										Используемые технологии:
+										<ul>
+											<li>Firebase</li>
+											<li>Dagger2</li>
+											<li>Navigation Component</li>
+											<li>Data Binding</li>
+										</ul>
+										Ссылка: <a href="https://play.google.com/store/apps/details?id=com.myexample.secupass" class="card-link" target="_blank">Google Play</a>
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card">
+								<img class="card-img-top portfolio-top" src="img/banner2eng.jpg" alt="Card image">
+								<div class="card-body">
+									<h4 class="card-title text-center">MyMessenger</h4>
+									<p class="card-text text-justify">Обновленный сервер и android клиент мессенджера. Позволяет общаться всем подключенным пользователям в одном общем чате. Первая версия сервера/мессенджера была техническим заданием при приеме на работу. Текущее обновление - желание исправить допущенные ошибки&#128516;</br>
+										Используемые технологии:
+										<ul>
+											<li>RX Java3</li>
+											<li>Dagger2</li>
+											<li>Navigation Component</li>
+										</ul>
+										Сервер: <a href="https://github.com/antonmiron/myMessenger_server" target="_blank">GitHub</a></br>
+										Клиент: <a href="https://github.com/antonmiron/myMessenger_client" target="_blank">GitHub</a>
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--Footer-->
+			<div class="container-lg bg-dark text-white pt-5 pb-3">
+				<p class="text-center">&#169;Anton Mironov 2021</p>
+			</div>
+
+
+			<!-- JS, Popper.js, and jQuery -->
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+			<!--chart-->
+			<script src="./js/chart.bundle.min.js"></script>
+			<script src="./js/chart.min.js"></script>
+
+			<script>
+				var yLabels = {
+					3 : 'не часто', 6 : 'часто', 9 : 'очень часто'
+				}
+				var ctx = document.getElementById('myChart').getContext('2d');
+				Chart.defaults.global.defaultFontColor = "#fff";
+				var myChart = new Chart(ctx, {
+					type: 'bar',
+					data: {
+						labels: ['Kotlin coroutines', 'Dagger2', 'RxJava', 'Navigation Components', 'Retrofit2', 'Picasso\\Glide'],
+						datasets: [{
+							label: 'частота использования',
+							data: [9, 7, 3, 9, 7, 4],
+							backgroundColor: [
+							'rgba(255, 99, 132, 0.2)',
+							'rgba(54, 162, 235, 0.2)',
+							'rgba(255, 206, 86, 0.2)',
+							'rgba(75, 192, 192, 0.2)',
+							'rgba(153, 102, 255, 0.2)',
+							'rgba(255, 159, 64, 0.2)'
+							],
+							borderColor: [
+							'rgba(255, 99, 132, 1)',
+							'rgba(54, 162, 235, 1)',
+							'rgba(255, 206, 86, 1)',
+							'rgba(75, 192, 192, 1)',
+							'rgba(153, 102, 255, 1)',
+							'rgba(255, 159, 64, 1)'
+							],
+							borderWidth: 1
+						}]
+					},
+					options: {
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true,
+									callback: function(value, index, values) {
+								//custom y-axes values
+								return yLabels[value];
+							}
+						}
+					}]
+				}
+			}});
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,115 @@
+/* Style all font awesome icons */
+.fa {
+  font-size: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  text-decoration: none!important;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: white;
+}
+
+.fa-telegram{
+  font-size:40px;
+}
+
+.icon{
+  width: 50px;
+}
+
+/* xs */
+.block {
+  text-align: center;
+  vertical-align: middle;
+}
+.circle {
+  border-radius: 100px;
+  color: white;
+  height: 100px;
+  font-weight: bold;
+  width: 100px;
+  display: table;
+  margin: 0px auto;
+}
+.circle p {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.non-mobile-border-left {
+  border-left: 0px solid #dee2e6!important;
+}
+.non-mobile-border-right {
+  border-right: 0px solid #dee2e6!important;
+}
+
+.carousel-indicators li{
+  background-color: #343a40c9;
+}
+.screen-center{
+  max-width: 800px; 
+  margin: auto;
+}
+
+
+img.my-photo {
+ width: 130px;
+ height: 130px;
+}
+
+img.portfolio-photo{
+  width: 90%;
+  margin: 16px auto;
+}
+/* sm */
+@media (min-width: 768px) {
+  img.my-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  img.portfolio-photo{
+    margin: 16px;
+  }
+
+  .non-mobile-border-left {
+    border-left: 1px solid #dee2e6!important;
+  }
+
+  .non-mobile-border-right {
+    border-right: 1px solid #dee2e6!important;
+  }
+}
+
+/* md */
+@media (min-width: 992px) {
+  img.my-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .non-mobile-border-left {
+    border-left: 1px solid #dee2e6!important;
+  }
+
+  .non-mobile-border-right {
+    border-right: 1px solid #dee2e6!important;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+  img.my-photo {
+    width: 150px;
+    height: 150px;
+  }
+  .non-mobile-border-left {
+    border-left: 1px solid #dee2e6!important;
+  }
+
+  .non-mobile-border-right {
+    border-right: 1px solid #dee2e6!important;
+  }
+}
